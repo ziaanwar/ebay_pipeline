@@ -1,0 +1,33 @@
+[0m14:47:43.081527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CCAE2E330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CCDC38230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CCDC3AC60>]}
+
+
+============================== 14:47:43.087538 | f24faf45-803b-4719-a69d-5a8a4b5f4c59 ==============================
+[0m14:47:43.087538 [info ] [MainThread]: Running with dbt=1.11.13
+[0m14:47:43.088539 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\ziaan\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init ebay_transform', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:47:43.122048 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ziaan\.dbt
+[0m14:47:43.126130 [debug] [MainThread]: Starter project path: C:\Users\ziaan\projects\Data Eng Pipeline\ebay_pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m14:47:43.153295 [info ] [MainThread]: 
+Your new dbt project "ebay_transform" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:47:43.154296 [info ] [MainThread]: Setting up your profile.
+[0m14:47:58.808369 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:47:58.809368 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:47:58.809368 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m14:50:21.221303 [info ] [MainThread]: Profile ebay_transform written to C:\Users\ziaan\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:50:21.224304 [debug] [MainThread]: Command `dbt init` succeeded at 14:50:21.223307 after 158.28 seconds
+[0m14:50:21.224304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CCB5C06B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CD0255220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022CD067D3D0>]}
+[0m14:50:21.224304 [debug] [MainThread]: Flushing usage events
+[0m14:50:21.996725 [debug] [MainThread]: An error was encountered while trying to flush usage events

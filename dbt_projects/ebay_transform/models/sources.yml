@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze_s3
+    database: PORTFOLIO_DB
+    schema: BRONZE
+    tables:
+      - name: s3_ebay_stage
