@@ -22,10 +22,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.12
+      - name: Set up Python 3.10
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.10'
 
       - name: Install Dependencies
         run: |
@@ -40,18 +40,18 @@ jobs:
       - name: Set up dbt profiles.yml
         run: |
           mkdir -p ~/.dbt
-          cat <<EOF > ~/.dbt/profiles.yml
+          cat << 'EOF' > ~/.dbt/profiles.yml
           ebay_transform:
             target: dev
             outputs:
               dev:
                 type: snowflake
-                account: "\"
-                user: "\"
-                password: "\"
-                role: "\"
-                warehouse: "\"
-                database: "\"
+                account: "${SNOWFLAKE_ACCOUNT}"
+                user: "${SNOWFLAKE_USER}"
+                password: "${SNOWFLAKE_PASSWORD}"
+                role: "${SNOWFLAKE_ROLE}"
+                warehouse: "${SNOWFLAKE_WAREHOUSE}"
+                database: "${SNOWFLAKE_DATABASE}"
                 schema: SILVER
                 threads: 4
           EOF
